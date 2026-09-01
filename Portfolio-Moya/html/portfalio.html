@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang = es>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Mi primera página web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+<body>
+
+    <div class= "encabezado">
+        
+        <header>
+            <h1>Portfolio - Moya Carlos Alejandro</h1>
+        </header>
+
+        <p class="text-inicial"><em>Estudiante de la Unsa - Ciencias Exactas</em></p>
+        
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href = "#sobre-mi">Sobre mí</a></li>
+                <li><a href = "#habilidades">Habilidades</a></li>
+                <li><a href = "#formacion">Formación</a></li>
+                <li><a href = "#proyectos">Proyectos</a></li>
+                <li><a href = "#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <main>
+        <section id = "sobre-mi">
+            <h2>Sobre mí</h2>
+            
+            <p class="informacion">Hola mi nombre es Moya Carlos Alejandro, soy estudiante de la carrera de <strong>
+                Licenciatura en Análisis de Sistemas</strong> en la Universidad Nacional de 
+                Salta ,actualmente me encuentro en mi segundo año. Me gusta la programación y 
+                el desarrollo web, y busco mejorar mis habilidades.
+            </p>
+
+            <div class = "imagenes" >
+                <img src = "imagenes/imagen-2.jpg" alt = "Foto de Carlos Alejandro Moya" class="foto-perfil">
+                <img src = "imagenes/imagen-1.jpg" alt = "Foto de Carlos Alejandro Moya" class="foto-perfil">
+                <img src = "imagenes/imagen-4.jpg" alt = "Foto de Carlos Alejandro Moya" class="foto-perfil">
+            </div>
+
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul class = "lista">
+                <li>Programación en Java</li>
+                <li>Programación en C</li>
+            </ul>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación</h2>
+            <p>Materias cursadas hasta ahora</p>
+            <table>
+                <tr>
+                    <th><strong>Materia</strong></th>
+                    <th><strong>Año</strong></th>
+                    <th><strong>Estado</strong></th>
+                </tr><!--primera fila de la columna-->
+                <tr>
+                    <td>Elementos de Programación</td>
+                    <td>2024</td>
+                    <td>Aprobada</td>
+                </tr><!--segunda fila de la columna-->
+                <tr>
+                    <td>Matemática para Informática</td>
+                    <td>2024</td>
+                    <td>Cursada</td>
+                </tr><!--tercera fila de la columna-->
+                <tr>
+                    <td>Programación</td>
+                    <td>2026</td>
+                    <td>Aprobada</td>
+                </tr><!--cuarta fila de la columna-->
+                <tr>
+                    <td>Análisis Matemático</td>
+                    <td>2026</td>
+                    <td>Cursada</td>
+                </tr><!--quinta fila de la columna-->
+                <tr>
+                    <td>Teoria de la Computación I</td>
+                    <td>2026</td>
+                    <td>Cursada</td>
+                </tr>
+                <tr>
+                    <td>Algoritmos y Estructuras de Datos</td>
+                    <td>2026</td>
+                    <td>Cursada</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <ol class = "lista">
+                <li>Aplicación de gestion de condicionalidades de materias en la universidad.</li>
+                <li>Este portfolio.</li>
+            </ol>
+        </section>
+       
+        <section id="contacto">
+            <h2>Contacto</h2>   
+
+            <ul class = "lista">
+                <li>Correo electrónico:<a class="mail" href="mailto:carlosmoya340@gmail.com">carlosmoya340@gmail.com</a></li>
+                <li>Telefono: +54 387 1234567</li>
+            </ul>
+            
+            <form class = "formulario">
+                   <h2>Tus datos</h2> 
+                    <div class = "form-campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" placeholder="Tu apellido">
+                    </div>
+                    
+                    <div class = "form-campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre">
+                    </div>
+                    
+                    <div class = "form-campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type = "email" id="correo" placeholder="mail@gmail.com">
+                    </div>
+                    
+                    <div class = "form-campo">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" placeholder="+54 387 4123567">
+                    </div>
+                    
+                    <div class = "form-campo">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="consulta">Consulta</option>
+                            <option value="propuesta de trabajo">Propuesta de Trabajo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class = "form-campo">
+                        <label>¿Cómo prefiere que lo contacte? </label>
+                        <div class="opciones-r">
+                            <input type="radio" id="radio-correo" name="preferencia-respuesta" value="correo" checked>
+                            <label for="radio-correo">Correo electrónico</label>
+                            <input type="radio" id="radio-telefono" name="preferencia-respuesta" value="telefono">
+                            <label for="radio-telefono">Teléfono</label>
+                        </div>
+                    </div>
+                    
+                    <!--type="radio"Sirve para que el usuario pueda seleccionar 
+                    una opción,con el formato de multiple choice.
+                    
+                    name="preferencia-respuesta" esto debe ser igual en ambas opciones para que se pueda 
+                    seleccionar solo una de las dos, sino se pueden seleccionar ambas
+                    Otra aclaración, el atributo name sirve para identificar ese dato al
+                    momento de enviar el formulario
+                    
+                    El checked sirve para que la opción de correo electrónico venga seleccionada 
+                    por defecto, sino se puede quitar y el usuario selecciona la opción que quiera
+                    -->
+                    
+                    <div class = "form-campo-completo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                <button class="btn" type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
